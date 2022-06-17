@@ -12,19 +12,21 @@ namespace Desafio_IMC
             string aceito = Console.ReadLine();
 
             //Validação dos dados digitados pelo usuário
-            while (aceito.ToLower() != "sim")
+            while(aceito.ToLower() != "sim" && aceito.ToLower() != "não")
             {
-                Console.WriteLine("Precisamos de uma confirmação válida. Por favor, digite SIM para que possamos continuar.");
+                Console.WriteLine("Precisamos de uma confirmação válida. Por favor, digite SIM para que possamos continuar ou NÃO caso queira sair.");
                 aceito = Console.ReadLine();
-
-                if (aceito.ToLower() == "não")
-                {
-                    Console.WriteLine("Entendemos que você NÃO queira prosseguir. Até uma próxima e siga se cuidando!");
-                    break;
-                }
             }
-            
 
+            if (aceito.ToLower() == "sim")
+            {
+                Console.WriteLine("Perfeito! Agora vamos dar continuidade ao programa.");
+            }
+
+            else if (aceito.ToLower() == "não")
+            {
+                Console.WriteLine("Entendemos que você NÃO queira prosseguir. Até uma próxima e siga se cuidando!");
+            }
 
         }
     }
