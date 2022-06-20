@@ -44,6 +44,12 @@ namespace Desafio_IMC
             Console.WriteLine("Agora, digite seu nome: \n(Exemplo: José da Silva)");
             nome = Console.ReadLine();
 
+            //Valida se um nome foi digitado
+            while (String.IsNullOrEmpty(nome))
+            {
+                Console.WriteLine("Por favor, digite um nome para prosseguir:");
+                nome = Console.ReadLine();
+            }
 
 
             // Solicitação do preenchimento da variável sexo pelo usuário
@@ -112,7 +118,7 @@ namespace Desafio_IMC
                 verificacaoAltura = double.TryParse(altura1, out altura);
             }
 
-            // Validação e limites de altura
+            // Validações e limites de altura
             while (altura == 0)
             {
                 Console.WriteLine("Você deve medir alguma coisa, no mínimo!");
