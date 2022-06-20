@@ -45,6 +45,7 @@ namespace Desafio_IMC
             nome = Console.ReadLine();
 
 
+
             // Solicitação do preenchimento da variável sexo pelo usuário
             Console.WriteLine("Digite seu sexo: (M ou F)");
             sexo = Console.ReadLine();
@@ -70,15 +71,15 @@ namespace Desafio_IMC
             Console.WriteLine("Nos informe sua idade: ");
             var idade1 = (Console.ReadLine());
 
-            var seila = int.TryParse(idade1, out idade);
+            var verificacaoIdade = int.TryParse(idade1, out idade);
 
             // Validações e definição de limites para idade
-            while (seila == false)
+            while (verificacaoIdade == false)
             {
                 Console.WriteLine("Por favor, digite uma idade. Se tiver tentando inserir letras, coloque números.");
                 Console.WriteLine("Nos informe sua idade: ");
                 idade1 = (Console.ReadLine());
-                seila = int.TryParse(idade1, out idade);
+                verificacaoIdade = int.TryParse(idade1, out idade);
             }
 
             while (idade < 0)
@@ -101,14 +102,14 @@ namespace Desafio_IMC
 
 
             // Uso do TryParse para evitar erro de exceções
-            var seila2 = double.TryParse(altura1, out altura);
+            var verificacaoAltura = double.TryParse(altura1, out altura);
 
-            while (seila2 == false)
+            while (verificacaoAltura == false)
             {
                 Console.WriteLine("Por favor, digite uma altura para prosseguir.\n Digite números, não letras.");
                 Console.WriteLine("(Lembre-se: em metros e separada por vírgula.)");
                 altura1 = (Console.ReadLine());
-                seila2 = double.TryParse(altura1, out altura);
+                verificacaoAltura = double.TryParse(altura1, out altura);
             }
 
             // Validação e limites de altura
@@ -140,15 +141,15 @@ namespace Desafio_IMC
 
 
             // Utilização do TryParse para evitar erros de exceções
-            var seila3 = double.TryParse(peso1, out peso);
+            var verificacaoPeso = double.TryParse(peso1, out peso);
 
 
-            while (seila3 == false)
+            while (verificacaoPeso == false)
             {
                 Console.WriteLine("Impossível captar peso em letras.");
                 Console.WriteLine("Por favor, digite seu peso. Lembre-se de separá-lo por vírgula e não ponto!");
                 peso1 = (Console.ReadLine());
-                seila3 = double.TryParse(peso1, out peso);
+                verificacaoPeso = double.TryParse(peso1, out peso);
             }
 
 
@@ -279,7 +280,7 @@ namespace Desafio_IMC
             }
 
 
-
+            // Exibição do Diagnóstico de acordo com os dados coletados e cálculos feitos 
             Console.WriteLine("Aqui está o seu Diagnóstico Prévio!");
             Console.WriteLine("Nome: " + nome);
             Console.WriteLine("Sexo: " + sexo);
