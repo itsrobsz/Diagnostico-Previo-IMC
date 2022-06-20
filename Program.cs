@@ -50,7 +50,7 @@ namespace Desafio_IMC
                 Console.WriteLine("Por favor, digite um nome para prosseguir:");
                 nome = Console.ReadLine();
             }
-
+            
 
             // Solicitação do preenchimento da variável sexo pelo usuário
             Console.WriteLine("Digite seu sexo: (M ou F)");
