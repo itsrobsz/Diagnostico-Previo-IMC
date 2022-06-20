@@ -44,24 +44,37 @@ namespace Desafio_IMC
             Console.WriteLine("Agora, digite seu nome: \n(Exemplo: José da Silva)");
             nome = Console.ReadLine();
 
-            //Valida se um nome foi digitado
+            // Valida se um nome foi digitado
             while (String.IsNullOrEmpty(nome))
             {
                 Console.WriteLine("Por favor, digite um nome para prosseguir:");
                 nome = Console.ReadLine();
             }
-            
+
+            // Uso do TryParse para evitar erro de exceção 
+            var verificacaoNome = int.TryParse(nome, out var nome1);
+
+            // Valida se foi digitado um nome ao invés de números
+            while (verificacaoNome == true)
+            {
+                Console.WriteLine("Digite um nome válido, sem números!");
+                nome = Console.ReadLine();
+                verificacaoNome = int.TryParse(nome, out nome1);
+            }
+
 
             // Solicitação do preenchimento da variável sexo pelo usuário
             Console.WriteLine("Digite seu sexo: (M ou F)");
             sexo = Console.ReadLine();
 
+            // Valida se o digitado tá dentro do esperado
             while (sexo.ToUpper() != "M" && sexo.ToUpper() != "F")
             {
                 Console.WriteLine("Sexo não encontrado! Por favor, insira o dado conforme especificado entre parênteses.");
                 sexo = Console.ReadLine();
             }
 
+            // Transforma o dado atribuído pelo usuário
             if (sexo.ToUpper() == "M")
             {
                 sexo = "Masculino";
@@ -77,9 +90,10 @@ namespace Desafio_IMC
             Console.WriteLine("Nos informe sua idade: ");
             var idade1 = (Console.ReadLine());
 
+            // Uso do TryParse para evitar erro de exceção
             var verificacaoIdade = int.TryParse(idade1, out idade);
 
-            // Validações e definição de limites para idade
+            //Valida se foi digitado um peso e se a entrada de dados foi o esperado(números)
             while (verificacaoIdade == false)
             {
                 Console.WriteLine("Por favor, digite uma idade. Se tiver tentando inserir letras, coloque números.");
@@ -88,6 +102,7 @@ namespace Desafio_IMC
                 verificacaoIdade = int.TryParse(idade1, out idade);
             }
 
+            // Validações e definição de limites para idade
             while (idade < 0)
             {
                 Console.WriteLine("Não existe idade negativa. Tente novamente!");
@@ -107,9 +122,10 @@ namespace Desafio_IMC
             var altura1 = (Console.ReadLine());
 
 
-            // Uso do TryParse para evitar erro de exceções
+            // Uso do TryParse para evitar erro de exceção
             var verificacaoAltura = double.TryParse(altura1, out altura);
 
+            //Valida se foi digitada uma altura e se se encontra no formato certo
             while (verificacaoAltura == false)
             {
                 Console.WriteLine("Por favor, digite uma altura para prosseguir.\n Digite números, não letras.");
@@ -118,7 +134,7 @@ namespace Desafio_IMC
                 verificacaoAltura = double.TryParse(altura1, out altura);
             }
 
-            // Validações e limites de altura
+            // Validações e definição de limites de altura
             while (altura == 0)
             {
                 Console.WriteLine("Você deve medir alguma coisa, no mínimo!");
@@ -149,7 +165,7 @@ namespace Desafio_IMC
             // Utilização do TryParse para evitar erros de exceções
             var verificacaoPeso = double.TryParse(peso1, out peso);
 
-
+            //Valida se foi digitado um peso e se a entrada de dados foi o esperado(números)
             while (verificacaoPeso == false)
             {
                 Console.WriteLine("Impossível captar peso em letras.");
@@ -159,7 +175,7 @@ namespace Desafio_IMC
             }
 
 
-            // Validações e definições de limites para peso
+            // Validações e definição de limites para peso
             while (peso == 0)
             {
                 Console.WriteLine("Todos já nascemos com algum peso. Verifique o que foi digitado e tente novamente!");
