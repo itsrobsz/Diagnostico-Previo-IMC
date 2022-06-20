@@ -1,0 +1,16 @@
+C:\Users\rober\Desktop\workspace\Desafio_EduSync\Desafio_IMC\Desafio_IMC\Desafio_IMC\bin\Debug\net5.0\Desafio_IMC.exe
+C:\Users\rober\Desktop\workspace\Desafio_EduSync\Desafio_IMC\Desafio_IMC\Desafio_IMC\bin\Debug\net5.0\Desafio_IMC.deps.json
+C:\Users\rober\Desktop\workspace\Desafio_EduSync\Desafio_IMC\Desafio_IMC\Desafio_IMC\bin\Debug\net5.0\Desafio_IMC.runtimeconfig.json
+C:\Users\rober\Desktop\workspace\Desafio_EduSync\Desafio_IMC\Desafio_IMC\Desafio_IMC\bin\Debug\net5.0\Desafio_IMC.runtimeconfig.dev.json
+C:\Users\rober\Desktop\workspace\Desafio_EduSync\Desafio_IMC\Desafio_IMC\Desafio_IMC\bin\Debug\net5.0\Desafio_IMC.dll
+C:\Users\rober\Desktop\workspace\Desafio_EduSync\Desafio_IMC\Desafio_IMC\Desafio_IMC\bin\Debug\net5.0\Desafio_IMC.pdb
+C:\Users\rober\Desktop\workspace\Desafio_EduSync\Desafio_IMC\Desafio_IMC\Desafio_IMC\obj\Debug\net5.0\Desafio_IMC.csproj.AssemblyReference.cache
+C:\Users\rober\Desktop\workspace\Desafio_EduSync\Desafio_IMC\Desafio_IMC\Desafio_IMC\obj\Debug\net5.0\Desafio_IMC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\Desktop\workspace\Desafio_EduSync\Desafio_IMC\Desafio_IMC\Desafio_IMC\obj\Debug\net5.0\Desafio_IMC.AssemblyInfoInputs.cache
+C:\Users\rober\Desktop\workspace\Desafio_EduSync\Desafio_IMC\Desafio_IMC\Desafio_IMC\obj\Debug\net5.0\Desafio_IMC.AssemblyInfo.cs
+C:\Users\rober\Desktop\workspace\Desafio_EduSync\Desafio_IMC\Desafio_IMC\Desafio_IMC\obj\Debug\net5.0\Desafio_IMC.csproj.CoreCompileInputs.cache
+C:\Users\rober\Desktop\workspace\Desafio_EduSync\Desafio_IMC\Desafio_IMC\Desafio_IMC\obj\Debug\net5.0\Desafio_IMC.dll
+C:\Users\rober\Desktop\workspace\Desafio_EduSync\Desafio_IMC\Desafio_IMC\Desafio_IMC\obj\Debug\net5.0\refint\Desafio_IMC.dll
+C:\Users\rober\Desktop\workspace\Desafio_EduSync\Desafio_IMC\Desafio_IMC\Desafio_IMC\obj\Debug\net5.0\Desafio_IMC.pdb
+C:\Users\rober\Desktop\workspace\Desafio_EduSync\Desafio_IMC\Desafio_IMC\Desafio_IMC\obj\Debug\net5.0\Desafio_IMC.genruntimeconfig.cache
+C:\Users\rober\Desktop\workspace\Desafio_EduSync\Desafio_IMC\Desafio_IMC\Desafio_IMC\obj\Debug\net5.0\ref\Desafio_IMC.dll
